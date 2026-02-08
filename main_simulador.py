@@ -14,7 +14,7 @@ def main():
         print("ℹ️  Tip: Para activar la IA real, crea un archivo .env con GEMINI_API_KEY=tu_clave")
         print("   Por ahora funcionará en modo 'Reglas Básicas'. Pruebe buscando 'nevera' o 'lavadora'.")
     
-    print("\nBot: ¡Hola! 👋 Bienvenido a ElectroHogar. Soy tu asistente virtual. ¿Qué estás buscando hoy?\n")
+    print("\nBot: ¡Hola! 👋 Bienvenido a Almacén Oportunidades. Soy tu asistente virtual. ¿Qué estás buscando hoy?\n")
 
     while True:
         try:

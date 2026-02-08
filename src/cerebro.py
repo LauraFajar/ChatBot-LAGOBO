@@ -47,7 +47,7 @@ class Brain:
             session['temp_producto'] = None
             
             if exito:
-                return "✅ ¡Pedido registrado! Un asesor revisará tu orden y te contactará para el pago y envío. ¡Gracias por elegir LAGOBO!"
+                return "✅ ¡Pedido registrado! Un asesor revisará tu orden y te contactará para el pago y envío. ¡Gracias por elegir Almacén Oportunidades!"
             else:
                 return "⚠️ Hubo un error registrando tu pedido. Por favor intenta más tarde o llama al 3209891720."
 
@@ -86,7 +86,7 @@ class Brain:
         if self.client:
             try:
                 prompt_sistema = (
-                    "Eres un asistente de ventas amable para 'Electrodomésticos LAGOBO'. "
+                    "Eres un asistente de ventas amable para 'Almacén Oportunidades'. "
                     "Tu objetivo es vender. Si te preguntan por productos, invítalos a buscar diciendo 'precio de x'. "
                     "Si quieren comprar, diles que escriban 'comprar'. "
                     "Sé conciso y usa emojis. El numero de contacto es 3209891720."
@@ -98,7 +98,7 @@ class Brain:
                 return response.text
             except Exception as e:
                 print(f"⚠️ Error IA: {e}")
-                return "Hola, soy el asistente de LAGOBO. ¿En qué puedo ayudarte hoy? Puedes buscar productos como 'nevera', 'lavadora', etc."
+                return "Hola, soy el asistente de Almacén Oportunidades. ¿En qué puedo ayudarte hoy? Puedes buscar productos como 'nevera', 'lavadora', etc."
         
-        return "👋 Hola, bienvenido a LAGOBO. Escribe el nombre del electrodoméstico que buscas (ej: 'Lavadora Samsung')."
+        return "👋 Hola, bienvenido a Almacén Oportunidades. Escribe el nombre del electrodoméstico que buscas (ej: 'Lavadora Samsung')."
 

@@ -1,6 +1,6 @@
-# 🤖 ChatBot LAGOBO - Asistente de Ventas IA
+# 🤖 ChatBot Almacén Oportunidades - Asistente de Ventas IA
 
-**ChatBot LAGOBO** es un asistente virtual inteligente diseñado para automatizar las ventas y la atención al cliente de un almacén de electrodomésticos. A diferencia de los chatbots tradicionales, este sistema está enfocado en el **cierre de ventas** y la **gestión de inventario en tiempo real**.
+**ChatBot Almacén Oportunidades** es un asistente virtual inteligente diseñado para automatizar las ventas y la atención al cliente de un almacén de electrodomésticos. A diferencia de los chatbots tradicionales, este sistema está enfocado en el **cierre de ventas** y la **gestión de inventario en tiempo real**.
 
 Integrado con **WhatsApp Business API** y potencidado por **Google Gemini AI**, el bot ofrece una experiencia de compra fluida, desde la consulta de precios hasta la confirmación del pedido.
 
@@ -92,4 +92,4 @@ ChatBot LAGOBO/
 ```
 
 ## 📝 Autor
-Desarrollado para **LAGOBO Electrodomésticos**.
+Desarrollado para **Almacén Oportunidades**.

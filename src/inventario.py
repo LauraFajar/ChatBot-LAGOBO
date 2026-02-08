@@ -20,7 +20,7 @@ class InventarioService:
                 SPREADSHEET_ID = "1iZ0viBh34WIQc_Pq6Zqm0kthaC766wa3bslNvyLe0xU"
                 self.doc = self.client.open_by_key(SPREADSHEET_ID)
                 self.sheet = self.doc.sheet1 
-                print("✅ Conexión exitosa con Google Sheets (LAGOBO)")
+                print("✅ Conexión exitosa con Google Sheets (Almacén Oportunidades)")
             else:
                 print(f"⚠️ No encontré {self.creds_file}. Usando modo respaldo CSV.")
                 self.usando_backup = True
