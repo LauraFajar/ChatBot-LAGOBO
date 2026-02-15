@@ -57,9 +57,11 @@ class InventarioService:
             
             for row in all_values[1:]:  
                 if len(row) >= 2 and row[0] and row[1]:  
+                    estado = row[2] if len(row) > 2 else "Consultar"
                     productos.append({
                         'referencia': row[0].strip(),
-                        'nombre': row[1].strip()
+                        'nombre': row[1].strip(),
+                        'estado': estado.strip()
                     })
             
             print(f"DEBUG: Leídos {len(productos)} productos del Sheet")

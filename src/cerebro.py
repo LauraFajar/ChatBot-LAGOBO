@@ -74,9 +74,16 @@ class Brain:
                 for p in resultados[:5]:  # Limitar a 5 resultados
                     referencia = p.get('referencia', 'N/A')
                     nombre = p.get('nombre', 'Producto')
-                    respuesta += f"📦 *{nombre}*\n   Ref: {referencia}\n\n"
+                    estado = p.get('estado', 'Consultar')
+                    
+                    # Icono según disponibilidad
+                    icono = "✅"
+                    if any(x in estado.lower() for x in ['no', 'agotado', '0']):
+                        icono = "❌"
+                    
+                    respuesta += f"{icono} *{nombre}*\n   Ref: {referencia}\n   Estado: {estado}\n\n"
                 
-                respuesta += "💰 Para consultar precios y disponibilidad, escribe *'Comprar [nombre del producto]'* o llama al 3209891720."
+                respuesta += "💰 Para consultar precios y comprar, escribe *'Comprar [nombre del producto]'* o llama al 3209891720."
                 session['temp_producto'] = f"{producto_detectado}"
                 return respuesta
             else:
